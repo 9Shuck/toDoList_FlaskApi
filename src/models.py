@@ -43,7 +43,7 @@ class Account(db.Model):
         account = cls.query.filter_by(id = id).one_or_none()
         return account
 
-    def update(slef, nick):
+    def update(self, nick):
         self.nick = nick
         db.session.commit()
 
